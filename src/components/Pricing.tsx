@@ -52,7 +52,7 @@ export default function Pricing() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary-500">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary-700">
             Angebot & Preise
           </p>
           <h2 className="mt-3 font-[family-name:var(--font-dm-serif)] text-3xl tracking-tight text-foreground sm:text-4xl">
@@ -77,7 +77,7 @@ export default function Pricing() {
               }`}
             >
               {plan.popular && (
-                <div className="absolute top-0 right-0 flex items-center gap-1 rounded-bl-xl bg-primary-500 px-4 py-1.5 text-xs font-semibold text-white">
+                <div className="absolute top-0 right-0 flex items-center gap-1 rounded-bl-xl bg-primary-500 px-4 py-1.5 text-xs font-semibold text-primary-950">
                   <Star className="h-3 w-3" />
                   Beliebt
                 </div>
@@ -100,7 +100,7 @@ export default function Pricing() {
               <ul className="mt-8 space-y-3">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className="mt-0.5 h-5 w-5 shrink-0 text-primary-500" />
+                    <Check className="mt-0.5 h-5 w-5 shrink-0 text-primary-700" />
                     <span className="text-sm text-foreground">{feature}</span>
                   </li>
                 ))}
@@ -110,7 +110,7 @@ export default function Pricing() {
                 href="#kontakt"
                 className={`mt-8 flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all ${
                   plan.popular
-                    ? "bg-primary-500 text-white shadow-md hover:bg-primary-600 hover:shadow-lg"
+                    ? "bg-primary-500 text-primary-950 shadow-md hover:bg-primary-400 hover:shadow-lg"
                     : "border border-primary-300 text-primary-700 hover:bg-primary-50"
                 }`}
               >

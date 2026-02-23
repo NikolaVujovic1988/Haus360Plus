@@ -16,14 +16,14 @@ export default function Hero() {
         {/* Text Content */}
         <div className="max-w-2xl text-center lg:text-left">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-white px-4 py-1.5 text-sm font-medium text-primary-700 shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-primary-500" />
+            <span className="h-2 w-2 rounded-full bg-primary-600" />
             Ihr 360-Grad-Service in Remscheid
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Sauber, gepflegt &{" "}
-            <span className="text-primary-500">sorgenfrei</span> —{" "}
-            <span className="text-primary-600">das</span> ist unser
+            <span className="text-primary-700">sorgenfrei</span> —{" "}
+            <span className="text-primary-800">das</span> ist unser
             Versprechen.
           </h1>
 
@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
             <Link
               href="#kontakt"
-              className="flex w-full items-center justify-center gap-2 rounded-full bg-primary-500 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-primary-600 hover:shadow-xl sm:w-auto"
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-primary-500 px-8 py-4 text-base font-semibold text-primary-950 shadow-lg transition-all hover:bg-primary-400 hover:shadow-xl sm:w-auto"
             >
               Kostenloses Angebot anfordern
               <ArrowRight className="h-4 w-4" />
@@ -46,7 +46,7 @@ export default function Hero() {
               href="tel:021914376329"
               className="flex w-full items-center justify-center gap-2 rounded-full border border-border bg-white px-8 py-4 text-base font-semibold text-foreground shadow-sm transition-all hover:border-primary-300 hover:bg-primary-50 sm:w-auto"
             >
-              <Phone className="h-4 w-4 text-primary-500" />
+              <Phone className="h-4 w-4 text-primary-700" />
               02191 - 4376329
             </a>
           </div>
@@ -58,7 +58,7 @@ export default function Hero() {
               "Regionaler Ansprechpartner",
             ].map((item) => (
               <div key={item} className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-primary-500" />
+                <CheckCircle className="h-4 w-4 text-primary-700" />
                 {item}
               </div>
             ))}

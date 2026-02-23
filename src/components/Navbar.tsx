@@ -37,7 +37,7 @@ export default function Navbar() {
             <span className="text-2xl font-bold tracking-tight text-foreground">
               Haus360
             </span>
-            <span className="text-2xl font-bold tracking-tight text-primary-500">
+            <span className="text-2xl font-bold tracking-tight text-primary-600">
               Plus
             </span>
           </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="hidden items-center gap-4 md:flex">
             <a
               href="tel:021914376329"
-              className="flex items-center gap-2 rounded-full bg-primary-500 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-600 hover:shadow-md"
+              className="flex items-center gap-2 rounded-full bg-primary-500 px-6 py-2.5 text-sm font-semibold text-primary-950 shadow-sm transition-all hover:bg-primary-400 hover:shadow-md"
             >
               <Phone className="h-4 w-4" />
               Jetzt anrufen
@@ -96,7 +96,7 @@ export default function Navbar() {
           ))}
           <a
             href="tel:021914376329"
-            className="mt-3 flex items-center justify-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-base font-semibold text-white"
+            className="mt-3 flex items-center justify-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-base font-semibold text-primary-950"
           >
             <Phone className="h-4 w-4" />
             02191 - 4376329

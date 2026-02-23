@@ -43,7 +43,7 @@ export default function Contact() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary-500">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary-700">
             Kontakt
           </p>
           <h2 className="mt-3 font-[family-name:var(--font-dm-serif)] text-3xl tracking-tight text-foreground sm:text-4xl">
@@ -162,7 +162,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-primary-500 px-8 py-4 text-base font-semibold text-white shadow-md transition-all hover:bg-primary-600 hover:shadow-lg sm:w-auto"
+                  className="flex w-full items-center justify-center gap-2 rounded-full bg-primary-500 px-8 py-4 text-base font-semibold text-primary-950 shadow-md transition-all hover:bg-primary-400 hover:shadow-lg sm:w-auto"
                 >
                   <Send className="h-4 w-4" />
                   Nachricht senden
@@ -214,7 +214,7 @@ export default function Contact() {
               </p>
               <a
                 href="tel:021914376329"
-                className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary-500 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-600"
+                className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary-500 px-5 py-2.5 text-sm font-semibold text-primary-950 transition-all hover:bg-primary-400"
               >
                 <Phone className="h-4 w-4" />
                 Direkt anrufen
