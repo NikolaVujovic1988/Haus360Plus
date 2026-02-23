@@ -83,7 +83,7 @@ export default function Services() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute bottom-4 left-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/90 shadow-md backdrop-blur-sm">
-                  <service.icon className="h-6 w-6 text-primary-700" />
+                  <service.icon className="h-6 w-6 text-primary-600" />
                 </div>
               </div>
 

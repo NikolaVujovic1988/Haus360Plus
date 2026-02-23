@@ -34,7 +34,7 @@ export default function Footer() {
               <span className="text-2xl font-bold tracking-tight text-white">
                 Haus360
               </span>
-              <span className="text-2xl font-bold tracking-tight text-primary-400">
+              <span className="text-2xl font-bold tracking-tight text-primary-500">
                 Plus
               </span>
             </Link>
