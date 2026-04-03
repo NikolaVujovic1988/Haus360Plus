@@ -10,7 +10,7 @@ const testimonials = [
   },
   {
     quote:
-      "Als Hausverwaltung brauchen wir einen Partner, der mitdenkt. Vlado und sein Team haben unseren Aufwand um 80% reduziert. Absolut empfehlenswert.",
+      "Als Hausverwaltung brauchen wir einen Partner, der mitdenkt. Das Team von Haus360Plus hat unseren Aufwand um 80% reduziert. Absolut empfehlenswert.",
     name: "M. Weber",
     location: "Remscheid",
     rating: 5,
