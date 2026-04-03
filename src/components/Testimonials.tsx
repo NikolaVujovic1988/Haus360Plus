@@ -12,7 +12,7 @@ const testimonials = [
     quote:
       "Als Hausverwaltung brauchen wir einen Partner, der mitdenkt. Vlado und sein Team haben unseren Aufwand um 80% reduziert. Absolut empfehlenswert.",
     name: "M. Weber",
-    location: "Hausverwaltung Weber, Remscheid",
+    location: "Remscheid",
     rating: 5,
   },
   {

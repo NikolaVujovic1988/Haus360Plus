@@ -1,14 +1,15 @@
 "use client";
 
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import Link from "next/link";
 import { useState, type FormEvent } from "react";
 
 const contactInfo = [
   {
     icon: Phone,
     label: "Telefon",
-    value: "02191 - 4376329",
-    href: "tel:021914376329",
+    value: "01556 - 7229610",
+    href: "tel:015567229610",
   },
   {
     icon: Mail,
@@ -32,10 +33,37 @@ const contactInfo = [
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      service: (form.elements.namedItem("service") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setError("Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -139,7 +167,7 @@ export default function Contact() {
                     <option value="reinigung">Reinigungsservice</option>
                     <option value="hausmeister">Hausmeisterservice</option>
                     <option value="gruen">Grünanlagenpflege</option>
-                    <option value="reparatur">Reparaturdienst</option>
+                    <option value="renovierung">Renovierung & Montage</option>
                     <option value="komplett">Komplett-Paket 360°</option>
                   </select>
                 </div>
@@ -160,12 +188,40 @@ export default function Contact() {
                   />
                 </div>
 
+                <div className="flex items-start gap-3">
+                  <input
+                    id="datenschutz"
+                    type="checkbox"
+                    required
+                    className="mt-1 h-4 w-4 shrink-0 rounded border-border accent-primary-600"
+                  />
+                  <label
+                    htmlFor="datenschutz"
+                    className="text-sm text-muted-foreground"
+                  >
+                    Ich habe die{" "}
+                    <Link
+                      href="/datenschutz"
+                      target="_blank"
+                      className="font-medium text-primary-600 underline hover:text-primary-700"
+                    >
+                      Datenschutzerklärung
+                    </Link>{" "}
+                    gelesen und stimme der Verarbeitung meiner Daten zu. *
+                  </label>
+                </div>
+
+                {error && (
+                  <p className="text-sm text-red-600">{error}</p>
+                )}
+
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-primary-600 px-8 py-4 text-base font-semibold text-white shadow-md transition-all hover:bg-primary-700 hover:shadow-lg sm:w-auto"
+                  disabled={sending}
+                  className="flex w-full items-center justify-center gap-2 rounded-full bg-primary-600 px-8 py-4 text-base font-semibold text-white shadow-md transition-all hover:bg-primary-700 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed sm:w-auto"
                 >
                   <Send className="h-4 w-4" />
-                  Nachricht senden
+                  {sending ? "Wird gesendet..." : "Nachricht senden"}
                 </button>
               </form>
             )}
@@ -207,13 +263,13 @@ export default function Contact() {
                 Ihr Ansprechpartner
               </p>
               <p className="mt-1 text-lg font-bold text-foreground">
-                Vladimir Djuric
+                Vladimir Duric
               </p>
               <p className="text-sm text-muted-foreground">
-                Inhaber & Geschäftsführer
+                Ihr Ansprechpartner vor Ort
               </p>
               <a
-                href="tel:021914376329"
+                href="tel:015567229610"
                 className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-700"
               >
                 <Phone className="h-4 w-4" />

@@ -16,19 +16,19 @@ const dmSerif = DM_Serif_Display({
 export const metadata: Metadata = {
   title: "Haus360Plus | Reinigungs- & Hausmeisterdienste in Remscheid",
   description:
-    "Ihr regionaler Partner für professionelle Reinigung, Hausmeisterservice, Grünanlagenpflege und Reparaturen in Remscheid. 360-Grad-Service mit dem Plus an Qualität.",
+    "Ihr regionaler Partner für professionelle Reinigung, Hausmeisterservice, Grünanlagenpflege und Montagearbeiten in Remscheid. 360-Grad-Service mit dem Plus an Qualität.",
   keywords: [
     "Reinigung Remscheid",
     "Hausmeisterservice Remscheid",
     "Gebäudereinigung",
     "Grünanlagenpflege",
-    "Reparaturdienst",
+    "Renovierung Montage",
     "Haus360Plus",
   ],
   openGraph: {
     title: "Haus360Plus | Reinigungs- & Hausmeisterdienste in Remscheid",
     description:
-      "360-Grad-Service mit dem Plus an Qualität. Reinigung, Hausmeisterservice, Grünanlagenpflege und Reparaturen.",
+      "360-Grad-Service mit dem Plus an Qualität. Reinigung, Hausmeisterservice, Grünanlagenpflege und Montagearbeiten.",
     locale: "de_DE",
     type: "website",
   },

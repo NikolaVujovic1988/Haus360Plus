@@ -58,7 +58,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden items-center gap-4 md:flex">
             <a
-              href="tel:021914376329"
+              href="tel:015567229610"
               className="flex items-center gap-2 rounded-full bg-primary-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-700 hover:shadow-md"
             >
               <Phone className="h-4 w-4" />
@@ -95,11 +95,11 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="tel:021914376329"
+            href="tel:015567229610"
             className="mt-3 flex items-center justify-center gap-2 rounded-full bg-primary-600 px-6 py-3 text-base font-semibold text-white"
           >
             <Phone className="h-4 w-4" />
-            02191 - 4376329
+            01556 - 7229610
           </a>
         </div>
       </div>

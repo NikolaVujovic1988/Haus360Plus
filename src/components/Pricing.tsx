@@ -10,13 +10,13 @@ const plans = [
     features: [
       "Treppenhausreinigung",
       "Grundlegende Außenpflege",
-      "Winterdienst (Gehwege)",
+      "Regelmäßige Objektbetreuung",
       "Monatliche Begehung",
       "Fester Ansprechpartner",
     ],
   },
   {
-    name: "Premium",
+    name: "Komplett 360°",
     description: "Für Mehrfamilienhäuser und Hausverwaltungen.",
     price: "Auf Anfrage",
     popular: true,
@@ -30,12 +30,12 @@ const plans = [
     ],
   },
   {
-    name: "Komplett 360°",
-    description: "Der volle Rundum-Service für anspruchsvolle Objekte.",
+    name: "Individuell",
+    description: "Individuelles Paket nach Ihren Bedürfnissen.",
     price: "Auf Anfrage",
     popular: false,
     features: [
-      "Alle Premium-Leistungen",
+      "Einzelleistungen oder als Paket",
       "Fensterreinigung",
       "Tiefgaragenreinigung",
       "Saisonale Bepflanzung",
@@ -70,7 +70,7 @@ export default function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative overflow-hidden rounded-2xl border p-8 transition-all duration-300 hover:shadow-lg ${
+              className={`relative flex flex-col overflow-hidden rounded-2xl border p-8 transition-all duration-300 hover:shadow-lg ${
                 plan.popular
                   ? "border-primary-400 bg-primary-50/30 shadow-md"
                   : "border-border bg-white shadow-sm"
@@ -97,7 +97,7 @@ export default function Pricing() {
                 </p>
               </div>
 
-              <ul className="mt-8 space-y-3">
+              <ul className="mt-8 space-y-3 mb-8">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <Check className="mt-0.5 h-5 w-5 shrink-0 text-primary-600" />
@@ -108,7 +108,7 @@ export default function Pricing() {
 
               <Link
                 href="#kontakt"
-                className={`mt-8 flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all ${
+                className={`mt-auto flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all ${
                   plan.popular
                     ? "bg-primary-600 text-white shadow-md hover:bg-primary-700 hover:shadow-lg"
                     : "border border-primary-300 text-primary-700 hover:bg-primary-50"

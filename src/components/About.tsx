@@ -2,7 +2,7 @@ import { Shield, Clock, Users, ThumbsUp } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
-  { icon: Clock, value: "Seit 2024", label: "in Remscheid aktiv" },
+  { icon: Clock, value: "Seit 2025", label: "in Remscheid aktiv" },
   { icon: Users, value: "50+", label: "zufriedene Kunden" },
   { icon: Shield, value: "100%", label: "Festpreisgarantie" },
   { icon: ThumbsUp, value: "360°", label: "Rundum-Service" },
@@ -17,8 +17,8 @@ export default function About() {
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1670851050245-d861fd433d06?w=800&q=80"
-                alt="Professionelles Kleinunternehmer-Team — Foto: Unsplash"
+                src="/images/ueber-uns-haus360-remscheid.png"
+                alt="Haus360Plus Team in Remscheid"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -34,19 +34,23 @@ export default function About() {
               Über Uns
             </p>
             <h2 className="mt-3 font-[family-name:var(--font-dm-serif)] text-3xl tracking-tight text-foreground sm:text-4xl">
-              Wir behandeln Ihre Immobilie, als wäre es unsere eigene.
+              Ihr Partner für Sauberkeit und Werterhalt
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Haus360Plus wurde von Vladimir Djuric mit einer klaren Vision
-              gegründet: Immobilienbesitzern in Remscheid einen Service zu
-              bieten, der wirklich alles abdeckt — zuverlässig, transparent
-              und persönlich.
+              Ob gepflegte Büroflächen, saubere Treppenhäuser oder ein
+              einladendes Außengelände: Unser Team sorgt mit festen Abläufen
+              und höchstem Qualitätsanspruch dafür, dass Ihre Objekte stets
+              einen perfekten Eindruck hinterlassen.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Wir kennen die Bedürfnisse unserer Region. Ob Mehrfamilienhaus,
-              Gewerbeeinheit oder Privatimmobilie — unser Team ist vor Ort, wenn
-              Sie uns brauchen. Mit festen Ansprechpartnern, klaren Abläufen
-              und dem Anspruch, jedes Detail richtig zu machen.
+              Vom privaten Wohnobjekt bis zur Gewerbeeinheit bieten wir
+              maßgeschneiderte Lösungen, die genau dort ansetzen, wo wir
+              gebraucht werden.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              <span className="font-semibold text-foreground">Haus360Plus</span>{" "}
+              – damit Sie den Kopf frei haben für Ihr Kerngeschäft oder Ihren
+              Feierabend.
             </p>
 
             {/* Stats */}

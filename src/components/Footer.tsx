@@ -18,7 +18,7 @@ const footerLinks = [
       { label: "Reinigungsservice", href: "#leistungen" },
       { label: "Hausmeisterservice", href: "#leistungen" },
       { label: "Grünanlagenpflege", href: "#leistungen" },
-      { label: "Reparaturdienst", href: "#leistungen" },
+      { label: "Renovierung & Montage", href: "#leistungen" },
     ],
   },
 ];
@@ -73,8 +73,8 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-center gap-2 text-sm text-white/50">
                 <Phone className="h-4 w-4 text-primary-400" />
-                <a href="tel:021914376329" className="hover:text-primary-400">
-                  02191 - 4376329
+                <a href="tel:015567229610" className="hover:text-primary-400">
+                  01556 - 7229610
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-white/50">
@@ -99,20 +99,22 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-xs text-white/40">
               &copy; {new Date().getFullYear()} Haus360Plus. Alle Rechte
-              vorbehalten. Inhaber: Vladimir Djuric.
+              vorbehalten. Inhaberin: Viktorija Duric.
             </p>
-            <p className="text-xs text-white/30">
-              Bilder:{" "}
-              <a
-                href="https://unsplash.com"
-                target="_blank"
-                rel="noopener noreferrer"
+            <div className="flex items-center gap-4 text-xs text-white/30">
+              <Link
+                href="/impressum"
                 className="underline hover:text-white/50"
               >
-                Unsplash
-              </a>{" "}
-              (kostenlose Lizenz)
-            </p>
+                Impressum
+              </Link>
+              <Link
+                href="/datenschutz"
+                className="underline hover:text-white/50"
+              >
+                Datenschutz
+              </Link>
+            </div>
           </div>
         </div>
       </div>

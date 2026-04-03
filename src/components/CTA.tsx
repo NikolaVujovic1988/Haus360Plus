@@ -28,11 +28,11 @@ export default function CTA() {
             <ArrowRight className="h-4 w-4" />
           </Link>
           <a
-            href="tel:021914376329"
+            href="tel:015567229610"
             className="flex items-center gap-2 rounded-full border-2 border-white/30 px-8 py-4 text-base font-semibold text-white transition-all hover:border-white/60 hover:bg-white/10"
           >
             <Phone className="h-4 w-4" />
-            02191 - 4376329
+            01556 - 7229610
           </a>
         </div>
       </div>

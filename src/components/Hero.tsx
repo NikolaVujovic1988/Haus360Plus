@@ -43,11 +43,11 @@ export default function Hero() {
               <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href="tel:021914376329"
+              href="tel:015567229610"
               className="flex w-full items-center justify-center gap-2 rounded-full border border-border bg-white px-8 py-4 text-base font-semibold text-foreground shadow-sm transition-all hover:border-primary-300 hover:bg-primary-50 sm:w-auto"
             >
               <Phone className="h-4 w-4 text-primary-600" />
-              02191 - 4376329
+              01556 - 7229610
             </a>
           </div>
 
@@ -69,8 +69,8 @@ export default function Hero() {
         <div className="relative mt-16 w-full max-w-xl lg:mt-0">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1559702971-54d4089fc5a5?w=800&q=80"
-              alt="Professionelle Grünanlagenpflege — Foto: Unsplash"
+              src="/images/pexels-pixabay-280222.webp"
+              alt="Gepflegtes Haus mit grünem Garten"
               fill
               className="object-cover"
               priority
