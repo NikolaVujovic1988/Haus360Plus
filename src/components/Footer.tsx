@@ -97,10 +97,29 @@ export default function Footer() {
         {/* Divider + Bottom */}
         <div className="mt-12 border-t border-white/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-xs text-white/40">
-              &copy; {new Date().getFullYear()} Haus360Plus. Alle Rechte
-              vorbehalten. Inhaberin: Viktorija Duric.
-            </p>
+            <div className="flex flex-col items-center gap-2 md:items-start">
+              <p className="text-xs text-white/40">
+                &copy; {new Date().getFullYear()} Haus360Plus. Alle Rechte
+                vorbehalten. Inhaberin: Viktorija Duric.
+              </p>
+              {/* Agentur-Hinweis, gleiches Muster wie auf den anderen ASR-Digital-Kundenseiten */}
+              <p className="text-xs text-white/40">
+                Designed with{" "}
+                <span aria-hidden="true" className="text-primary-400">
+                  &#9829;
+                </span>{" "}
+                in NRW by{" "}
+                <a
+                  href="https://asrdigital.de"
+                  target="_blank"
+                  rel="noopener"
+                  title="ASR Digital, Digitalagentur aus Wuppertal"
+                  className="whitespace-nowrap text-white/60 underline-offset-4 transition-colors hover:text-primary-400 hover:underline"
+                >
+                  ASR Digital
+                </a>
+              </p>
+            </div>
             <div className="flex items-center gap-4 text-xs text-white/30">
               <Link
                 href="/impressum"
